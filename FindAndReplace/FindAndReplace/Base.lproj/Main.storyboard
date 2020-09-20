@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FindAndReplace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="fKH-nV-iBf">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ucb-Rh-CPs">
+                                <rect key="frame" x="25" y="94" width="364" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Find Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kxB-uG-NlJ">
+                                        <rect key="frame" x="16" y="0.0" width="348" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="kxB-uG-NlJ" secondAttribute="trailing" id="1Ij-bW-80P"/>
+                                    <constraint firstItem="kxB-uG-NlJ" firstAttribute="leading" secondItem="ucb-Rh-CPs" secondAttribute="leading" constant="16" id="4bU-Cl-C1D"/>
+                                    <constraint firstAttribute="height" constant="50" id="GnG-CL-qdb"/>
+                                    <constraint firstAttribute="bottom" secondItem="kxB-uG-NlJ" secondAttribute="bottom" id="Kh7-LO-5JZ"/>
+                                    <constraint firstItem="kxB-uG-NlJ" firstAttribute="top" secondItem="ucb-Rh-CPs" secondAttribute="top" id="f3W-uy-1Vu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loO-2P-cC7">
+                                <rect key="frame" x="25" y="169" width="364" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Replace Text" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1iD-BT-AhR">
+                                        <rect key="frame" x="16" y="0.0" width="348" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="1iD-BT-AhR" secondAttribute="trailing" id="1sz-kW-Dwh"/>
+                                    <constraint firstItem="1iD-BT-AhR" firstAttribute="top" secondItem="loO-2P-cC7" secondAttribute="top" id="HMN-vG-XBz"/>
+                                    <constraint firstItem="1iD-BT-AhR" firstAttribute="leading" secondItem="loO-2P-cC7" secondAttribute="leading" constant="16" id="a9g-6r-8iZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="1iD-BT-AhR" secondAttribute="bottom" id="c1D-2M-yGM"/>
+                                    <constraint firstAttribute="height" constant="50" id="sv9-sl-u5S"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcT-O9-KP1">
+                                <rect key="frame" x="25" y="249" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="T4L-hB-Y3d"/>
+                                    <constraint firstAttribute="height" constant="50" id="bTO-41-vdY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="FIND">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="find_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3WN-aD-MuS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQi-9p-B4z">
+                                <rect key="frame" x="239" y="249" width="150" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kot-hs-eTE"/>
+                                    <constraint firstAttribute="width" constant="150" id="zes-eD-ojb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="REPLACE">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="replace_click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yKc-qE-Oct"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U8i-6J-Ifh">
+                                <rect key="frame" x="25" y="349" width="364" height="463"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ucb-Rh-CPs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="2sV-ng-9U4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="U8i-6J-Ifh" secondAttribute="bottom" constant="50" id="4bV-6D-2yu"/>
+                            <constraint firstItem="DcT-O9-KP1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="670-4r-hA6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fKH-nV-iBf" secondAttribute="trailing" id="7cI-eD-2It"/>
+                            <constraint firstItem="fKH-nV-iBf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8fO-mM-HPe"/>
+                            <constraint firstItem="U8i-6J-Ifh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="8gG-HK-S9L"/>
+                            <constraint firstItem="ucb-Rh-CPs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Cpb-lI-6RX"/>
+                            <constraint firstItem="fKH-nV-iBf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LUg-3L-cLt"/>
+                            <constraint firstItem="DcT-O9-KP1" firstAttribute="top" secondItem="loO-2P-cC7" secondAttribute="bottom" constant="30" id="OaB-FK-6dZ"/>
+                            <constraint firstItem="U8i-6J-Ifh" firstAttribute="top" secondItem="DcT-O9-KP1" secondAttribute="bottom" constant="50" id="Zsu-8X-6Bj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="loO-2P-cC7" secondAttribute="trailing" constant="25" id="adq-sO-MFg"/>
+                            <constraint firstItem="loO-2P-cC7" firstAttribute="top" secondItem="ucb-Rh-CPs" secondAttribute="bottom" constant="25" id="eic-QB-6SB"/>
+                            <constraint firstAttribute="bottom" secondItem="fKH-nV-iBf" secondAttribute="bottom" id="h2T-Jg-WWV"/>
+                            <constraint firstItem="loO-2P-cC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ldN-sD-Ozi"/>
+                            <constraint firstItem="LQi-9p-B4z" firstAttribute="top" secondItem="loO-2P-cC7" secondAttribute="bottom" constant="30" id="wCY-a1-0jU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ucb-Rh-CPs" secondAttribute="trailing" constant="25" id="xfm-do-77f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LQi-9p-B4z" secondAttribute="trailing" constant="25" id="yNL-Ef-Yk0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U8i-6J-Ifh" secondAttribute="trailing" constant="25" id="zJT-b5-tS4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn_find" destination="DcT-O9-KP1" id="wbi-fl-kfW"/>
+                        <outlet property="btn_replace" destination="LQi-9p-B4z" id="6Rd-pJ-fY3"/>
+                        <outlet property="txt_find" destination="kxB-uG-NlJ" id="NvE-PU-oYF"/>
+                        <outlet property="txt_replace" destination="1iD-BT-AhR" id="yd2-eB-aOt"/>
+                        <outlet property="txtarea" destination="U8i-6J-Ifh" id="ziD-vI-2af"/>
+                        <outlet property="view_find" destination="ucb-Rh-CPs" id="JtH-lC-sCL"/>
+                        <outlet property="view_replace" destination="loO-2P-cC7" id="Hx1-PH-Q92"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="564" height="1128"/>
+    </resources>
+</document>
